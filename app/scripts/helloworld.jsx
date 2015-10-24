@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import MessageDisplay from './messagedisplay'
 
+import styles from '../styles/helloworld.css'
+
 export default class HelloWorld extends React.Component {
   constructor(props) {
     super(props)
@@ -25,7 +27,8 @@ export default class HelloWorld extends React.Component {
         <p><img src={require('../img/pumpkin-128.png')}/></p>
         <input ref="in"
                onChange={this.updateModel}
-               value={this.state.greeting}/>
+               value={this.state.greeting}
+               className={styles.test2}/>
         <MessageDisplay greeting={this.state.greeting}/>
         <button onClick={this.reset}>Clear</button>
       </div>

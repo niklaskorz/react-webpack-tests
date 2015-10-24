@@ -1,0 +1,9 @@
+.test {
+  border-radius: 4px;
+  color: red;
+}
+
+.test2 {
+  composes: test;
+  font-size: 20px;
+}

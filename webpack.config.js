@@ -26,7 +26,7 @@ module.exports = {
       loader: 'json'
     }, {
       test: /\.css$/,
-      loaders: ['style', 'css']
+      loaders: ['style', 'css?modules']
     }, {
       test: /\.(gif|jpg|jpeg|png|svg)$/,
       loaders: ['url?limit=25000', 'image-webpack']
